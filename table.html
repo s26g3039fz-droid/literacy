@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Table</title>
+    <style>
+        /* Basic table styling */
+        table {
+            border-collapse: collapse; /* Merge borders */
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tfoot td {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Monthly Sales Report</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Product A</th>
+                <th>Product B</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>120</td>
+                <td>80</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>150</td>
+                <td>90</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>170</td>
+                <td>110</td>
+                <td>280</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>440</td>
+                <td>280</td>
+                <td>720</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
